@@ -14,6 +14,7 @@ log_archive(){
         return 1
     fi
 
+    echo"Hello"
     DATE_NOW=$(date +%Y%m%d_%H%M%S)
     tar -czvf "logs_archive_${DATE_NOW}.tar.gz" ${1}
 }
